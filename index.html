@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Buscador de Widget</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Buscador de Widget</h2>
+  
+
+  <label for="jsonInput">Cole o JSON completo do fluxo abaixo:</label>
+  <textarea id="jsonInput" rows="12" placeholder="Cole aqui o JSON completo do fluxo..."></textarea>
+
+  <label for="widgetName">Nome do Widget:</label>
+  <input type="text" id="widgetName" placeholder="Digite o nome do widget a ser buscado... Em casos de mais de um widgets basta adicionar uma virgula entre os nomes">
+
+  <button onclick="buscarWidget()">Buscar Widget</button>
+
+  <div class="result" id="resultadoJson">
+    O JSON do widget aparecerá aqui...
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
